@@ -94,6 +94,7 @@ body {
  color: #DADADA;
 }
 
+
 .homearticle {
 	align-items: left;
 	text-align: left;
@@ -114,6 +115,14 @@ a {
 }
 
 .hometitle {
+	color: #DADADA;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	text-align: center;
+	font-size: 30px;
+}
+
+.updatestitle {
 	color: #DADADA;
 	padding-top: 20px;
 	padding-bottom: 10px;
