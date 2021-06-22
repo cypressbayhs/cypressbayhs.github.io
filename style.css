@@ -60,10 +60,6 @@ body {
   transition: 0.3s;
 }
 
-.ddtt {
-	display: none;
-}
-
 .ddbb {
 	display: none;
 }
@@ -85,11 +81,6 @@ body {
 	padding: 12px 16px;
 	text-decoration: none;
 	display: block;
-}
-
-.header-logo {
-  width: 60px;
-  height: 60px;
 }
 
 .header-item:hover {
@@ -122,42 +113,12 @@ a {
 	color: #DADADA;
 }
 
-.codetext {
-  color: #DADADA;
-  padding-left: 15px;
-}
-
-.spacelol {
-  padding: 10px;
-}
-
 .hometitle {
 	color: #DADADA;
 	padding-top: 20px;
 	padding-bottom: 10px;
 	text-align: center;
 	font-size: 30px;
-}
-
-.hometext {
-	font-size: 2vw;
-	text-align: center;
-}
-
-.homesection {
-  transition: 0.2s;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding-left: 20px;
-  align-items: center;
-  padding-right: 20px;	
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
-.hometextcontainer {
-	width: 50%;
 }
 
 .dropdownbtn {
@@ -192,52 +153,11 @@ a {
 }
 
 @media (max-width: 813px) {
-	.homesection {
-		flex-direction: column;
-	}
-
-	.hometextcontainer {
-		padding: 0;
-		margin: auto
-	}
-
-	.hometext {
-		padding: 0;
-		font-size: 16px;
-	}
-
-	.hometextcontainer {
-		width: 100%
-	}
-
-	.hometexttitle {
-		font-size: 20px;
-		padding-top: 5px
-	}
-
-	.myavatar {
-		width: 40%;
-		height: 40%;
-		padding-bottom: 10px;
-	}
-	
-	.mainlinks {
-		display: none
-	}
-
-	.ddtt {
-		display: block;	
-		font-size: 30px
-	}
-
-	.header-container {
-		padding: 10px
-	}
-
 	.ddbb {
 		display: block;
 		font-size: 20px
 	}
+
 	.paratext {
 		width: auto;
 		padding-left: 10px;
@@ -245,24 +165,6 @@ a {
 	}
 	.titletext {
 		font-size: 24px;
-	}
-}
-
-@media (min-width: 960px) {
-	.myavatar {
-		width: 250px;
-		height: 250px;
-		padding-right: 20px
-	}
-	.hometext {
-		font-size: 20px
-	}
-	.homesection {
-		justify-content: center
-	}
-	.hometextcontainer {
-		width: 600px;
-		padding-left: 20px
 	}
 }
 
