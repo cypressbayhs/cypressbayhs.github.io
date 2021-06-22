@@ -1,12 +1,43 @@
 <!DOCTYPE html>
 <html>
+<head>
+	<meta charset="UTF-8">
+	<title>CBHS Updates</title>
+	<link rel="stylesheet" href="style.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+</head>
   
-  <head>
-    <title>Contributing Test</title>
-   </head>
-  
-  <body>
-    <p>Testing this site. Now with contribs.</p>
-  </body>
+<body>
+	<script>
+		function testFunc() { 
+			document.getElementById("ddcontent").classList.toggle("showme");	
+			document.getElementById("ddicon").classList.toggle("rotate");
+		}
+	</script>
+
+	<header class="headercontainer">
+		<h2 class="titletext">Cypress Bay HS Updates</h2>
+		<div class="flexspacebetween">
+			<a href="/" class="header-item links mainlinks">Home</a>
+			<a href="/" class="header-item links mainlinks">About</a>
+			<a href="/" class="header-item links mainlinks">Updates</a>
+			<a href="/" class="header-item links mainlinks">Discord</a>
+		</div>
+		<button onclick="testFunc()" class="dropdownbtn ddbb">
+			<i id='ddicon' class='fa fa-caret-down ddi' aria-hidden='true'></i>	
+		</button>
+		
+		<div id="ddcontent" class="dropdowncontent">
+			<a href="/" class="header-item links mainlinks">Home</a>
+			<a href="/" class="header-item links mainlinks">About</a>
+			<a href="/" class="header-item items mainlinks">Updates</a>
+			<a href="/" class="header-item items mainlinks">Discord</a>	
+		</div>
+		
+	</header>
+
+	<p>Testing this site. Getting Mobile Issues</p>
+
+	</body>
   
 </html>
