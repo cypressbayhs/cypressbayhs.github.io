@@ -13,12 +13,12 @@
 
 *::-moz-selection {
   color: #111110;
-  background-color: #8DE969;
+  background-color: #F2CC8F;
 }
 
 *::selection {
   color: #111110;
-  background-color: #8DE969;
+  background-color: #F2CC8F;
 }
 
 html, body {
@@ -26,7 +26,13 @@ html, body {
 }
 
 body {
-  background-color: #191716;
+  background-color: #0e0e0e;
+}
+
+.flexcenter {
+	display:flex;
+	align-items: center;
+	justify-content: center;	
 }
 
 .headercontainer {
@@ -35,7 +41,7 @@ body {
   align-items: center;
   justify-content: space-between;
   max-height: 60px;
-  background-color: #181615;
+  background-color: #0e0e0e;
   border-bottom: #F2CC8F solid 3px;
 }
 
@@ -46,7 +52,7 @@ body {
 
 .header-item {
   color:#DADADA;
-  font-size: 20px;
+  font-size: 22px;
   cursor: pointer;
   padding: 5px;
   padding-left: 15px;
@@ -65,10 +71,11 @@ body {
 .dropdowncontent {
 	display: none;
 	position: absolute;
-	background-color: #181615;
+	background-color: #0e0e0e;
 	min-width: 160px;
 	top: 65px;
 	overflow: auto;
+	border: #1e1e1e solid 2px;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	z-index: 10;
 }
@@ -90,17 +97,29 @@ body {
 }
 
 .titletext {
+ font-size: 28px;
  font-weight: 900;
  padding-right: 5px; 
  color: #DADADA;
 }
 
+.homearticle {
+	align-items: left;
+	text-align: left;
+}
+
 .paratext {
+  font-weight: 400;
   color: #DADADA;
+  width: 800px;
   font-size: 20px;
-  padding-left: 15px;
-  width: 46%;
-  padding-top: 15px;
+  padding-bottom: 40px;
+  margin: 0 auto;
+  border-bottom: #1e1e1e solid 3px;
+}
+
+a {
+	color: #DADADA;
 }
 
 .codetext {
@@ -114,9 +133,10 @@ body {
 
 .hometitle {
 	color: #DADADA;
-	padding: 20px;
+	padding-top: 20px;
+	padding-bottom: 10px;
 	text-align: center;
-	font-size: 40px;
+	font-size: 30px;
 }
 
 .hometext {
@@ -159,7 +179,7 @@ body {
 }
 
 .dropdownbtn:hover {
-	background-color: #2a2817;
+	background-color: #191716;
 }
 
 .dropdownbtn:hover > .ddi {
@@ -217,6 +237,14 @@ body {
 	.ddbb {
 		display: block;
 		font-size: 20px
+	}
+	.paratext {
+		width: auto;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.titletext {
+		font-size: 24px;
 	}
 }
 

@@ -3,6 +3,21 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<!-- external metadata -->
+	<meta data-react-helmet="true" name="viewport" content="width=device-width, initial-scale=1">
+	<meta data-react-helmet="true" name="msapplication-TileColor" content="#f2cc8f">
+	<meta data-react-helmet="true" name="theme-color" content="#f2cc8f">
+  	<meta data-react-helmet="true" name="description" content="CBHS Updates is dedicated at bringing you the latest news and updates from Cypress Bay.">
+	<meta data-react-helmet="true" property="og:type" content="website">
+	<meta data-react-helmet="true" property="og:url" content="https://cypressbayhs.github.io">
+	<meta data-react-helmet="true" property="og:description" content="CBHS Updates is dedicated at bringing you the latest news and updates from Cypress Bay.">
+	<meta data-react-helmet="true" name="twitter:widgets:theme" content="light">
+	<meta data-react-helmet="true" name="twitter:dnt" content="on">
+	<meta data-react-helmet="true" name="twitter:creator" content="@carsonfranko">
+	<meta data-react-helmet="true" name="twitter:title" content="CBHS Updates">
+	<meta data-react-helmet="true" name="twitter:description" content="CBHS Updates is dedicated at bringing you the latest news and updates from Cypress Bay.">
+
 	<title>CBHS Updates</title>
 	<link rel="stylesheet" href="style.css"/>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
@@ -18,11 +33,11 @@
 
 	<header class="headercontainer">
 		<h2 class="titletext">Cypress Bay HS Updates</h2>
-		<div class="flexspacebetween">
+		<div class="flexcenter">
 			<a href="/" class="header-item links mainlinks">Home</a>
-			<a href="/" class="header-item links mainlinks">About</a>
 			<a href="/" class="header-item links mainlinks">Updates</a>
-			<a href="/" class="header-item links mainlinks">Discord</a>
+			<a href="/" class="header-item links mainlinks">Calendar</a>
+			<a href="/" target="_blank" class="header-item links mainlinks">Contact</a>
 		</div>
 		<button onclick="testFunc()" class="dropdownbtn ddbb">
 			<i id='ddicon' class='fa fa-caret-down ddi' aria-hidden='true'></i>	
@@ -30,14 +45,41 @@
 		
 		<div id="ddcontent" class="dropdowncontent">
 			<a href="/" class="header-item links mainlinks">Home</a>
-			<a href="/" class="header-item links mainlinks">About</a>
 			<a href="/" class="header-item items mainlinks">Updates</a>
-			<a href="/" class="header-item items mainlinks">Discord</a>	
+			<a href="/" class="header-item items mainlinks">Calendar</a>	
+			<a href="/" target="_blank" class="header-item links mainlinks">Contact</a>
 		</div>
 		
 	</header>
 
-	<p>Testing this site. Getting Mobile Issues</p>
+	<div class="homearticle">
+		<h2 class="hometitle">About</h2>
+		<p class="paratext">
+		To make things clear, this is not an official Cypress Bay website. This is a website developed by students to help other students. If you would like to visit the actual website please navigate to <a href="https://browardschools.com/cypressbay" target="_blank">this</a> page. 
+		<br><br>
+		This project is dedicated to delivering clear and reliable news to the students. One problem from previous school year is the uncertainty of information. Although Cypress has an official website, it does not cover everything students would like to know. This website fixes that problem and delivers news and updates right to you. You can meet the community behind this project through the <a href="https://discord.gg/sFYhF4qE8x" target="_blank" >discord server</a>.
+		</p>  
+	</div>
+
+	<div class="spacelol"></div>
+
+	<div class="homearticle">
+		<h2 class="hometitle">Contributing</h2>
+		<p class="paratext">
+		One man cannot complete this job with ease. Regarding website help, please visit the <a href="https://www.github.com/cypressbayhs/cypressbayhs.github.io" target="_blank">github repository</a> and look at the issues tab. If you would like to help add news and updates please visit the contact page. <br><br>One thing I need help with right now is website design so if you are good at design or anything of that sort, you already know what to do. Of course, if you cannot help out in any of these fields, exposing this website is the best you can do to help out fellow peers.
+		</p>
+	</div>
+
+	<div class="homearticle">
+		<h2 class="hometitle">Extra Information<h2>
+		<p class="paratext">
+		I would love to put club, class, and other information down in a different tab. Having club information available would help new students in seeing all updates for each club and aiding the choice in picking which ones to join. Like I have mentioned earlier, I do not have a giant ear and cannot provide information for every single club and class known. If you would like to help out with your club or any updates you would like to share, please head to the contact tab and message me.	
+		</p>
+	</div>
+	
+	<footer>
+		
+	</footer>
 
 	</body>
   
