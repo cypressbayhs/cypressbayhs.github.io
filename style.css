@@ -173,6 +173,13 @@ a {
 	transition: 0.2s 
 }
 
+.calendar {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
 @media (max-width: 813px) {
 	.ddbb {
 		display: block;
@@ -190,15 +197,12 @@ a {
 	.mainlinks {
 		display: none;
 	}
+	.calendar {
+		width: 90%;	
+	}
 }
 
 .showme {
 	display: block;
 }
 
-.calendar {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	width: 50%;
-  }
