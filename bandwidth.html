@@ -55,21 +55,29 @@
 	</header>
 
 	<div class="homearticle">
-		<h2 class="hometitle">About</h2>
+		<h2 class="hometitle">Official Website Bloat</h2>
 		<p class="paratext">
-		To make things clear, this is not an official Cypress Bay website. This is a website developed by students to help other students. If you would like to visit the actual website please navigate to <a href="https://www.browardschools.com/cypressbay" target="_blank">this</a> page. 
-		<br><br>
-		The difference between this site and Cypress's website is the clear and non bloated web design. I went for a simple and modern approach to minimize bandwidth used upon loading the page and also I focused on improving readability. Please <a href="/bandwidth" target="_blank">read this</a> if you are curious about bandwidth differences. 
-		</p>  
-	</div>
-
-	<div class="spacelol"></div>
-
-	<div class="homearticle">
-		<h2 class="hometitle">Extra</h2>
-		<p class="paratext">
-		If there is any information that you would like to add or edit, please visit the <a href="./contact">contact</a> tab and message me about the site. If you know html, css, or any other tools that can be used to make this site better, please open a pr to the <a href="https://github.com/cypressbayhs/cypressbayhs.github.io">github repository</a>.   
-		</p>
+		When opening Cypress Bay's website, we all notice the long and sometimes painful loading if you are using poor internet. There are lots of pictures, pop ups, buttons, and confusing links scattered throughout the page. 
+		<br></br>
+		When I made this site, I was curious on how big of a difference there was between the amount of bandwidth my site and Cypress Bay's site used. This is the script I used. All it does is look at recieved bytes and upon a keypress, it displays how much bandwidth was used over that time frame.
+		<br></br>
+		<code>
+		#!/usr/bin/sh
+		<br>
+		init="$(($(cat /sys/class/net/[ew]*/statistics/rx_bytes | paste -sd '+')))"
+		<br>
+		printf "Recording bandwidth. Press enter to stop."
+		<br>
+		read -r foo
+		<br>
+		fin="$(($(cat /sys/class/net/[ew]*/statistics/rx_bytes | paste -sd '+')))"
+		<br>
+		printf "%4sB of bandwidith used.\\n" $(numfmt --to=iec $(($fin-$init)))
+		</code>
+		<br></br>
+		After testing this script on <a href="https://www.browardschools.com/cypressbay" target="_blank">Cypress Bay's Website</a> I got a total of 9.6MB of bandwidth used. To put this into perspective, this site is more than 4 4k images in size. Soon after, I tested this site's <a href="https://cypressbayhs.github.io/updates" target="_blank">updates page</a> and totaled 92KB. This means that my site is 104x smaller.
+		<br></br>
+		I'm not saying that cypress should change their site but this is pretty noticable when using a weak connection. If you make websites or call yourself a webdev, please consider how much bandwidth your site takes up when loading a page.
 	</div>
 
 	<footer></footer>

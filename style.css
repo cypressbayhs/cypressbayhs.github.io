@@ -29,6 +29,13 @@ body {
   background-color: #0e0e0e;
 }
 
+code {
+	font-family: Consolas, "courier new";
+	color: #DADADA;
+	padding: 2px;
+	font-size: 17px;
+}
+
 .flexcenter {
 	display:flex;
 	align-items: center;
