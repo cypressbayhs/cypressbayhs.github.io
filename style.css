@@ -30,7 +30,7 @@ body {
 }
 
 code {
-	font-family: Consolas, "courier new";
+	font-family: monospace;
 	color: #DADADA;
 	padding: 2px;
 	font-size: 17px;
